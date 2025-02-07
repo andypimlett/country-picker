@@ -10,8 +10,9 @@ export default function Home() {
 
   return (
     <div
-      className={"w-screen h-screen flex flex-col justify-center items-center"}
+      className={" w-screen h-screen flex flex-col justify-center items-center"}
     >
+      <div className={"w-128 p-5 bg-red-50"}>
       <div className={"w-96 px-5"}>
         <label className="block text-sm font-medium text-gray-700">
           Select a country
@@ -24,6 +25,10 @@ export default function Home() {
           selectedValue={COUNTRIES.find((option) => option.value === country)}
         />
       </div>
+      <div className={"w-96 p-5"}>
+      <h1>Call to action</h1>
+      <p>Place buttons here.</p>
+      </div></div>
     </div>
   );
 }
